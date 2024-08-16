@@ -40,80 +40,136 @@
     }
 
     .tweets-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 20px;
+      column-count: 3;
+      column-gap: 20px;
     }
 
     .twitter-tweet {
-      min-width: 0 !important;
-      width: 100% !important;
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 1200px) {
+      .tweets-grid {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .tweets-grid {
+        column-count: 1;
+      }
     }
   </style>
 </head>
 
-<body class="body">
-  <div class="about-blog">
-    <!-- <div class="polaroid"></div> -->
-    <div class="div-block-2">
-      <div class="text-container-2 first">
-        <div class="section-title-big">Tweets of the week</div>
-        <div class="tweets-grid">
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">Tennis has some of the best aspirational aesthetics of any sport. Athleticism,
-              calmness, atmosphere, sexuality, fashion. It&#39;s just perfect<br><br>for this reason I can never forgive
-              the pickleballers <a href="https://t.co/O0gLOUESsB">pic.twitter.com/O0gLOUESsB</a></p>&mdash; Simon Sarris
-            (@simonsarris) <a href="https://twitter.com/simonsarris/status/1803839762756677645?ref_src=twsrc%5Etfw">June
-              20, 2024</a>
-          </blockquote>
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">At the object level thinking drunk driving laws will make you a communist country is
-              dumb.<br><br>But at the meta level, having an uneducated working class that has an immediate revulsion to
-              any increase in government power is the single biggest reason America is great. <a
-                href="https://t.co/Bnr0RiVWg1">https://t.co/Bnr0RiVWg1</a></p>&mdash; shako (@shakoistsLog) <a
-              href="https://twitter.com/shakoistsLog/status/1822822516496404499?ref_src=twsrc%5Etfw">August 12, 2024</a>
-          </blockquote>
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">american women are only obsessed with height because it's the only form of sexual
-              dimorphism they get to indulge in at bmi 25</p>&mdash; nicest girl (@muglersdaughter) <a
-              href="https://twitter.com/muglersdaughter/status/1823049112939385218?ref_src=twsrc%5Etfw">August 12,
-              2024</a>
-          </blockquote>
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">in sf almost no value is derived from having a "fashion sense". its so uninteresting
-              to
-              people they dont even have terms to describe it. the closest thing here to complimenting someone's outfit
-              is
-              "By the way, are you a designer?"</p>&mdash; ken (@aquariusacquah) <a
-              href="https://twitter.com/aquariusacquah/status/1821700730312650997?ref_src=twsrc%5Etfw">August 9,
-              2024</a>
-          </blockquote>
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">The good news: we got much better at running The Sort. The bad news: we got much
-              better
-              at running The Sort. <a href="https://t.co/oDwEqQl71f">https://t.co/oDwEqQl71f</a></p>&mdash; Patrick
-            McKenzie (@patio11) <a
-              href="https://twitter.com/patio11/status/1818781344702644311?ref_src=twsrc%5Etfw">July
-              31, 2024</a>
-          </blockquote>
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">I have a huge crush on Usha Vance after learning she&#39;s not only pretty, but also
-              autistic <a href="https://t.co/s9nWubRuMd">pic.twitter.com/s9nWubRuMd</a></p>&mdash; typec (new acct)
-            (@typeclonghouse) <a
-              href="https://twitter.com/typeclonghouse/status/1817408218294820983?ref_src=twsrc%5Etfw">July 28, 2024</a>
-          </blockquote>
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">&quot;Showtime. Remember, just graze my ear. You&#39;re the best sniper in the world
-              so that should be easy.&quot;<br><br>&quot;Walk in the park, sir.&quot;<br><br>&quot;Oh and... you&#39;ll
-              get your head blown off and be remembered as a retarded liberal. But, I&#39;ll know you were a
-              patriot.&quot;<br><br>&quot;That&#39;s all that matters, sir.&quot; <a
-                href="https://t.co/Nn017lJjki">https://t.co/Nn017lJjki</a> <a
-                href="https://t.co/eJeDyStOIV">pic.twitter.com/eJeDyStOIV</a></p>&mdash; Frasier Payne (@MeinGottNiles)
-            <a href="https://twitter.com/MeinGottNiles/status/1814361422392164513?ref_src=twsrc%5Etfw">July 19, 2024</a>
-          </blockquote>
-        </div>
-      </div>
-    </div>
+<body style="padding: 48px;">
+  <div class="section-title-big">SELECTED TWEETS OF THE MONTH</div>
+  <div class="tweets-grid">
+    <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">Confucius says: skill issue lmao <a
+          href="https://t.co/eRbXuVkbeS">pic.twitter.com/eRbXuVkbeS</a></p>&mdash; kache (@yacineMTB) <a
+        href="https://twitter.com/yacineMTB/status/1800326265448100282?ref_src=twsrc%5Etfw">June 11, 2024</a>
+    </blockquote>
+    <!-- <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">Tennis has some of the best aspirational aesthetics of any sport. Athleticism,
+        calmness, atmosphere, sexuality, fashion. It&#39;s just perfect<br><br>for this reason I can never forgive
+        the pickleballers <a href="https://t.co/O0gLOUESsB">pic.twitter.com/O0gLOUESsB</a></p>&mdash; Simon Sarris
+      (@simonsarris) <a href="https://twitter.com/simonsarris/status/1803839762756677645?ref_src=twsrc%5Etfw">June
+        20, 2024</a>
+    </blockquote> -->
+    <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">At the object level thinking drunk driving laws will make you a communist country is
+        dumb.<br><br>But at the meta level, having an uneducated working class that has an immediate revulsion to
+        any increase in government power is the single biggest reason America is great. <a
+          href="https://t.co/Bnr0RiVWg1">https://t.co/Bnr0RiVWg1</a></p>&mdash; shako (@shakoistsLog) <a
+        href="https://twitter.com/shakoistsLog/status/1822822516496404499?ref_src=twsrc%5Etfw">August 12, 2024</a>
+    </blockquote>
+    <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">Today&#39;s mood <a href="https://t.co/A94UFBADKm">pic.twitter.com/A94UFBADKm</a></p>
+      &mdash; National Museum of Mathematics (@MoMath1) <a
+        href="https://twitter.com/MoMath1/status/1802711804881080366?ref_src=twsrc%5Etfw">June 17, 2024</a>
+    </blockquote>
+    <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">She looks objectively better on the right, men are so blinded by the performance of
+        femininity that they actually have zero eye for beauty and aesthetics. You’re a rube. <a
+          href="https://t.co/99GmB0TU9g">https://t.co/99GmB0TU9g</a></p>&mdash; RFH🦎👁‍🗨🪐🌘 ⬛️ (Doctor)
+      (@hollowearthterf) <a
+        href="https://twitter.com/hollowearthterf/status/1801076278205784348?ref_src=twsrc%5Etfw">June 13, 2024</a>
+    </blockquote>
+    <!-- <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">american women are only obsessed with height because it's the only form of sexual
+        dimorphism they get to indulge in at bmi 25</p>&mdash; nicest girl (@muglersdaughter) <a
+        href="https://twitter.com/muglersdaughter/status/1823049112939385218?ref_src=twsrc%5Etfw">August 12,
+        2024</a>
+    </blockquote> -->
+    <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">in sf almost no value is derived from having a "fashion sense". its so uninteresting
+        to
+        people they dont even have terms to describe it. the closest thing here to complimenting someone's outfit
+        is
+        "By the way, are you a designer?"</p>&mdash; ken (@aquariusacquah) <a
+        href="https://twitter.com/aquariusacquah/status/1821700730312650997?ref_src=twsrc%5Etfw">August 9,
+        2024</a>
+    </blockquote>
+    <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">The good news: we got much better at running The Sort. The bad news: we got much
+        better
+        at running The Sort. <a href="https://t.co/oDwEqQl71f">https://t.co/oDwEqQl71f</a></p>&mdash; Patrick
+      McKenzie (@patio11) <a href="https://twitter.com/patio11/status/1818781344702644311?ref_src=twsrc%5Etfw">July
+        31, 2024</a>
+    </blockquote>
+    <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">I have a huge crush on Usha Vance after learning she&#39;s not only pretty, but also
+        autistic <a href="https://t.co/s9nWubRuMd">pic.twitter.com/s9nWubRuMd</a></p>&mdash; typec (new acct)
+      (@typeclonghouse) <a href="https://twitter.com/typeclonghouse/status/1817408218294820983?ref_src=twsrc%5Etfw">July
+        28, 2024</a>
+    </blockquote>
+    <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">&quot;Showtime. Remember, just graze my ear. You&#39;re the best sniper in the world
+        so that should be easy.&quot;<br><br>&quot;Walk in the park, sir.&quot;<br><br>&quot;Oh and... you&#39;ll
+        get your head blown off and be remembered as a retarded liberal. But, I&#39;ll know you were a
+        patriot.&quot;<br><br>&quot;That&#39;s all that matters, sir.&quot; <a
+          href="https://t.co/Nn017lJjki">https://t.co/Nn017lJjki</a> <a
+          href="https://t.co/eJeDyStOIV">pic.twitter.com/eJeDyStOIV</a></p>&mdash; Frasier Payne (@MeinGottNiles)
+      <a href="https://twitter.com/MeinGottNiles/status/1814361422392164513?ref_src=twsrc%5Etfw">July 19, 2024</a>
+    </blockquote>
+    <!-- <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">i drove you minions bananas while my money gru despicably</p>&mdash; will (@twothickscoops)
+      <a href="https://twitter.com/twothickscoops/status/1799563936892936605?ref_src=twsrc%5Etfw">June 8, 2024</a>
+    </blockquote>
+    <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">There is something so profound to me in this image of Otto von Bismarck on his deathbed.
+        This towering man, a man who had single-handedly created the biggest power in continental Europe, is now lying
+        shriveled, misbegotten. It reminds me of Shelley's poem Ozymandias <a
+          href="https://t.co/QPQjlJYqQj">pic.twitter.com/QPQjlJYqQj</a></p>&mdash; Sami Gold 🥥🌴 (@souljagoytellem) <a
+        href="https://twitter.com/souljagoytellem/status/1799560607890325510?ref_src=twsrc%5Etfw">June 8, 2024</a>
+    </blockquote>
+    <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">ok this has been bothering me because what 40s noir was this face in. he&#39;s too twinky
+        and doesn&#39;t have that matinee idol look. this is the face of a 50s musical sidekick <a
+          href="https://t.co/ZqKbiFWxIX">https://t.co/ZqKbiFWxIX</a></p>&mdash; raven von sternberg (@ArguablyRaven) <a
+        href="https://twitter.com/ArguablyRaven/status/1798916746201665596?ref_src=twsrc%5Etfw">June 7, 2024</a>
+    </blockquote>
+    <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">&#39;Germans aren&#39;t naturally predisposed to be good at engineering. That&#39;s
+        nonsense.&#39;<br><br>Achim Leistner: &#39;Can you be quiet, please. I&#39;m trying to use my &quot;atomic
+        feeling&quot; superpower to create perfectly smooth spheres beyond the capacity of any machine.&#39; <a
+          href="https://t.co/S2ZsBvLl8Q">https://t.co/S2ZsBvLl8Q</a></p>&mdash; Ewan C. Forbes (@Ewan_C_Forbes) <a
+        href="https://twitter.com/Ewan_C_Forbes/status/1798392088578699407?ref_src=twsrc%5Etfw">June 5, 2024</a>
+    </blockquote>
+    <blockquote class="twitter-tweet">
+      <p lang="zxx" dir="ltr"><a href="https://t.co/iBevVPeGOK">pic.twitter.com/iBevVPeGOK</a></p>&mdash; merritt k
+      (@merrittk) <a href="https://twitter.com/merrittk/status/1794130911501357223?ref_src=twsrc%5Etfw">May 24, 2024</a>
+    </blockquote>
+    <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">Having children is the most meaningful thing you can do with your life. Intellectuals and
+        creatives can&#39;t accept this because it means their vocations aren&#39;t supremely meaningful and any fool
+        can have a more worthwhile life. But it&#39;s true and all the counterarguments are cope.</p>&mdash; Victor
+      Kumar (@victorckumar) <a
+        href="https://twitter.com/victorckumar/status/1793659858971230418?ref_src=twsrc%5Etfw">May 23, 2024</a>
+    </blockquote> -->
   </div>
   <script src="js/jquery.js" type="text/javascript"></script>
   <script src="js/webflow-script.js" type="text/javascript"></script>
